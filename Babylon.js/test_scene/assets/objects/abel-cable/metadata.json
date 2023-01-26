@@ -1,0 +1,77 @@
+{
+    "name": "abel-cable",
+    "nb_levels": 10,
+    "nb_textures": 1,
+    "area": 7.339,
+    "Levels": [
+        {
+            "level": 0,
+            "filename": "level0.drc",
+            "size": 9,
+            "hdrvdp2": 0.471
+        },
+        {
+            "level": 1,
+            "filename": "level1.drc",
+            "size": 63,
+            "hdrvdp2": 0.375
+        },
+        {
+            "level": 2,
+            "filename": "level2.drc",
+            "size": 105,
+            "hdrvdp2": 0.339
+        },
+        {
+            "level": 3,
+            "filename": "level3.drc",
+            "size": 141,
+            "hdrvdp2": 0.305
+        },
+        {
+            "level": 4,
+            "filename": "level4.drc",
+            "size": 176,
+            "hdrvdp2": 0.304
+        },
+        {
+            "level": 5,
+            "filename": "level5.drc",
+            "size": 210,
+            "hdrvdp2": 0.297
+        },
+        {
+            "level": 6,
+            "filename": "level6.drc",
+            "size": 242,
+            "hdrvdp2": 0.292
+        },
+        {
+            "level": 7,
+            "filename": "level7.drc",
+            "size": 274,
+            "hdrvdp2": 0.291
+        },
+        {
+            "level": 8,
+            "filename": "level8.drc",
+            "size": 307,
+            "hdrvdp2": 0.290
+        },
+        {
+            "level": 9,
+            "filename": "full.drc",
+            "size": 341,
+            "hdrvdp2": 0.291
+        }
+    ],
+    "Textures": [
+        {
+            "level": 0,
+            "filename": "model.jpg",
+            "size": 296,
+            "hdrvdp2": 0
+        }
+    ]
+}
+

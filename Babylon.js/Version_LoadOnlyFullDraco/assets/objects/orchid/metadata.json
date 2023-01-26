@@ -1,0 +1,66 @@
+{
+    "name": "orchid",
+    "nb_levels": 10,
+    "nb_textures": 1,
+    "area": 13.1476,
+    "Levels": [
+        {
+            "level": 0,
+            "filename": "level0.drc",
+            "size": 7
+        },
+        {
+            "level": 1,
+            "filename": "level1.drc",
+            "size": 14
+        },
+        {
+            "level": 2,
+            "filename": "level2.drc",
+            "size": 20
+        },
+        {
+            "level": 3,
+            "filename": "level3.drc",
+            "size": 25
+        },
+        {
+            "level": 4,
+            "filename": "level4.drc",
+            "size": 29
+        },
+        {
+            "level": 5,
+            "filename": "level5.drc",
+            "size": 34
+        },
+        {
+            "level": 6,
+            "filename": "level6.drc",
+            "size": 38
+        },
+        {
+            "level": 7,
+            "filename": "level7.drc",
+            "size": 43
+        },
+        {
+            "level": 8,
+            "filename": "level8.drc",
+            "size": 48
+        },
+        {
+            "level": 9,
+            "filename": "full.drc",
+            "size": 52
+        }
+    ],
+    "Textures": [
+        {
+            "level": 0,
+            "filename": "model.jpg",
+            "size": 348
+        }
+    ]
+}
+

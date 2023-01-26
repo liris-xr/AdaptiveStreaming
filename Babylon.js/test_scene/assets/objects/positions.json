@@ -1,0 +1,26 @@
+[
+    {
+        "name": "lion",
+        "position": [-15, 1.1, 4],
+        "rotation": [270, 0, 0],
+        "scale": 0.1
+    },
+    {
+        "name": "catbird",
+        "position": [-12, 1.1, 4],
+        "rotation": [-57.617, 94.943, -4.154],
+        "scale": 0.0025
+    },
+    {
+        "name": "bronze-cat",
+        "position": [-8, 1.1, 4],
+        "rotation": [105, 335, 359],
+        "scale": 1
+    },
+    {
+        "name": "triceratops",
+        "position": [-20, 1.1, 4],
+        "rotation": [272.18, 12.95, 270.247],
+        "scale": 0.0012
+    }
+]

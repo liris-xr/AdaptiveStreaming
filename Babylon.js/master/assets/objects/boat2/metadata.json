@@ -1,0 +1,77 @@
+{
+    "name": "boat2",
+    "nb_levels": 10,
+    "nb_textures": 1,
+    "area": 180.849,
+    "Levels": [
+        {
+            "level": 0,
+            "filename": "level0.drc",
+            "size": 13,
+            "hdrvdp2": 0.606
+        },
+        {
+            "level": 1,
+            "filename": "level1.drc",
+            "size": 94,
+            "hdrvdp2": 0.432
+        },
+        {
+            "level": 2,
+            "filename": "level2.drc",
+            "size": 153,
+            "hdrvdp2": 0.411
+        },
+        {
+            "level": 3,
+            "filename": "level3.drc",
+            "size": 205,
+            "hdrvdp2": 0.397
+        },
+        {
+            "level": 4,
+            "filename": "level4.drc",
+            "size": 254,
+            "hdrvdp2": 0.391
+        },
+        {
+            "level": 5,
+            "filename": "level5.drc",
+            "size": 302,
+            "hdrvdp2": 0.389
+        },
+        {
+            "level": 6,
+            "filename": "level6.drc",
+            "size": 349,
+            "hdrvdp2": 0.387
+        },
+        {
+            "level": 7,
+            "filename": "level7.drc",
+            "size": 398,
+            "hdrvdp2": 0.388
+        },
+        {
+            "level": 8,
+            "filename": "level8.drc",
+            "size": 448,
+            "hdrvdp2": 0.388
+        },
+        {
+            "level": 9,
+            "filename": "full.drc",
+            "size": 501,
+            "hdrvdp2": 0.387
+        }
+    ],
+    "Textures": [
+        {
+            "level": 0,
+            "filename": "model.jpg",
+            "size": 428,
+            "hdrvdp2": 0
+        }
+    ]
+}
+

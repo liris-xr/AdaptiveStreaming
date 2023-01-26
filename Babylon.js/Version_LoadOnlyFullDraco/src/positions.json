@@ -1,0 +1,122 @@
+[
+    {
+        "name": "abel-cable",
+        "position": [14.7, 2.2, 9.8],
+        "rotation": [92, 135, 0],
+        "scale": 0.02
+    },
+    {
+        "name": "boat",
+        "position": [-9.2, 0.65, 0],
+        "rotation": [0, 0, 0],
+        "scale": 0.6
+    },
+    {
+        "name": "bronze-cat",
+        "position": [-3.2, 1.1, -7],
+        "rotation": [105, 335, 359],
+        "scale": 1
+    },
+    {
+        "name": "catbird",
+        "position": [-3.6, 6.13, -6.75],
+        "rotation": [-57.617, 94.943, -4.154],
+        "scale": 0.0025
+    },
+    {
+        "name": "cone",
+        "position": [-11, 6.025, 14.55],
+        "rotation": [12.493, 200, 0],
+        "scale": 0.015
+    },
+    {
+        "name": "coptic-prayer-book",
+        "position": [4.08, 1.01, -10.05],
+        "rotation": [0, 0, 0],
+        "scale": 0.003
+    },
+    {
+        "name": "dinosaur",
+        "position": [-22, 6.7, -11],
+        "rotation": [269, 46.626, 9.163],
+        "scale": 0.5
+    },
+    {
+        "name": "georges-washington",
+        "position": [4, 1.13, 10],
+        "rotation": [93, 0, 0],
+        "scale": 0.003
+    },
+    {
+        "name": "golden-statue",
+        "position": [15.1, 1.5, -7.8],
+        "rotation": [0, 100, 0],
+        "scale": 0.002
+    },
+    {
+        "name": "jomon-figurine",
+        "position": [15.1, 1.2, -10.1],
+        "rotation": [273, 0, 0],
+        "scale": 3
+    },
+    {
+        "name": "lion",
+        "position": [-12, 1.1, 8.5],
+        "rotation": [270, 0, 0],
+        "scale": 0.1
+    },
+    {
+        "name": "lizard",
+        "position": [-9.5, 5.49, -6],
+        "rotation": [0, 60, 0],
+        "scale": 0.6
+    },
+    {
+        "name": "malay-bear",
+        "position": [-11, 1.5, -8.5],
+        "rotation": [170, 300, 5],
+        "scale": 0.01
+    },
+    {
+        "name": "orchid",
+        "position": [-3.7, 6.02, 6.8],
+        "rotation": [257.567, 72.7, 144],
+        "scale": 0.02
+    },
+    {
+        "name": "pistol",
+        "position": [3.8, 0.95, 6.7],
+        "rotation": [178, 30, 110],
+        "scale": 0.01
+    },
+    {
+        "name": "sculpture-shaman",
+        "position": [15.5, 1.135, -5.5],
+        "rotation": [0, 180, 0],
+        "scale": 0.5
+    },
+    {
+        "name": "shuttle",
+        "position": [15.4, 4.5, 3.5],
+        "rotation": [80, 0, 0],
+        "scale": 0.0002
+    },
+    {
+        "name": "skull-bear",
+        "position": [-11.4, 5.58, 5.3],
+        "rotation": [357, 320, 8.6],
+        "scale": 1
+    },
+    {
+        "name": "triceratops",
+        "position": [-22, 6, 13],
+        "rotation": [272.18, 12.95, 270.247],
+        "scale": 0.0015
+    },
+    {
+        "name": "vase",
+        "position": [3.15, 1.19, -7.6],
+        "rotation": [0, 0, 0],
+        "scale": 1.2
+    }
+]

@@ -1,0 +1,18 @@
+<Object levels="10" textures="1" area="13,1476">
+    <Levels>
+        <Representation level="0" filename="level0.drc" size="7"/>
+        <Representation level="1" filename="level1.drc" size="14"/>
+        <Representation level="2" filename="level2.drc" size="20"/>
+        <Representation level="3" filename="level3.drc" size="25"/>
+        <Representation level="4" filename="level4.drc" size="29"/>
+        <Representation level="5" filename="level5.drc" size="34"/>
+        <Representation level="6" filename="level6.drc" size="38"/>
+        <Representation level="7" filename="level7.drc" size="43"/>
+        <Representation level="8" filename="level8.drc" size="48"/>
+        <Representation level="9" filename="full.drc" size="52"/>
+    </Levels>
+
+    <Textures>
+        <Representation level="0" filename="model.jpg" size="346"/>
+    </Textures>
+</Object>

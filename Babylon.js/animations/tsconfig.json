@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+        "module": "esNext",
+		"target": "es6",
+		"moduleResolution": "node",
+		"strict": true,
+		"allowSyntheticDefaultImports": true,
+		"resolveJsonModule": true,
+		"noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "skipLibCheck": true,
+		"preserveConstEnums":true,
+		"sourceMap": true,
+		"watch": false
+	},
+	"files": [
+		"src/index.ts"
+	]
+}

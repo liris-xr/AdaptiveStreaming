@@ -1,0 +1,77 @@
+{
+    "name": "triceratops",
+    "nb_levels": 10,
+    "nb_textures": 1,
+    "area": 34299572.636,
+    "Levels": [
+        {
+            "level": 0,
+            "filename": "level0.drc",
+            "size": 11,
+            "hdrvdp2": 0.621
+        },
+        {
+            "level": 1,
+            "filename": "level1.drc",
+            "size": 47,
+            "hdrvdp2": 0.427
+        },
+        {
+            "level": 2,
+            "filename": "level2.drc",
+            "size": 70,
+            "hdrvdp2": 0.391
+        },
+        {
+            "level": 3,
+            "filename": "level3.drc",
+            "size": 90,
+            "hdrvdp2": 0.370
+        },
+        {
+            "level": 4,
+            "filename": "level4.drc",
+            "size": 107,
+            "hdrvdp2": 0.362
+        },
+        {
+            "level": 5,
+            "filename": "level5.drc",
+            "size": 123,
+            "hdrvdp2": 0.347
+        },
+        {
+            "level": 6,
+            "filename": "level6.drc",
+            "size": 138,
+            "hdrvdp2": 0.334
+        },
+        {
+            "level": 7,
+            "filename": "level7.drc",
+            "size": 154,
+            "hdrvdp2": 0.329
+        },
+        {
+            "level": 8,
+            "filename": "level8.drc",
+            "size": 170,
+            "hdrvdp2": 0.324
+        },
+        {
+            "level": 9,
+            "filename": "full.drc",
+            "size": 186,
+            "hdrvdp2": 0.321
+        }
+    ],
+    "Textures": [
+        {
+            "level": 0,
+            "filename": "model.jpg",
+            "size": 580,
+            "hdrvdp2": 0
+        }
+    ]
+}
+

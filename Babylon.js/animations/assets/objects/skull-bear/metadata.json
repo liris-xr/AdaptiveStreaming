@@ -1,0 +1,77 @@
+{
+    "name": "skull-bear",
+    "nb_levels": 10,
+    "nb_textures": 1,
+    "area": 6.493,
+    "Levels": [
+        {
+            "level": 0,
+            "filename": "level0.drc",
+            "size": 8,
+            "hdrvdp2": 0.447
+        },
+        {
+            "level": 1,
+            "filename": "level1.drc",
+            "size": 89,
+            "hdrvdp2": 0.345
+        },
+        {
+            "level": 2,
+            "filename": "level2.drc",
+            "size": 145,
+            "hdrvdp2": 0.318
+        },
+        {
+            "level": 3,
+            "filename": "level3.drc",
+            "size": 216,
+            "hdrvdp2": 0.303
+        },
+        {
+            "level": 4,
+            "filename": "level4.drc",
+            "size": 277,
+            "hdrvdp2": 0.297
+        },
+        {
+            "level": 5,
+            "filename": "level5.drc",
+            "size": 323,
+            "hdrvdp2": 0.296
+        },
+        {
+            "level": 6,
+            "filename": "level6.drc",
+            "size": 294,
+            "hdrvdp2": 0.295
+        },
+        {
+            "level": 7,
+            "filename": "level7.drc",
+            "size": 298,
+            "hdrvdp2": 0.297
+        },
+        {
+            "level": 8,
+            "filename": "level8.drc",
+            "size": 420,
+            "hdrvdp2": 0.297
+        },
+        {
+            "level": 9,
+            "filename": "full.drc",
+            "size": 517,
+            "hdrvdp2": 0.299
+        }
+    ],
+    "Textures": [
+        {
+            "level": 0,
+            "filename": "model.jpg",
+            "size": 235,
+            "hdrvdp2": 0
+        }
+    ]
+}
+
