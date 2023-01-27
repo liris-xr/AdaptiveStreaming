@@ -4,7 +4,7 @@ This project aims to import 3D objects (meshes) in a dynamic and adaptive way, a
 
 The principle is as follows: the objects are broken down into different levels of detail which are stored on a server. On the client side, a script evaluates the different levels of detail depending on the user's position / rotation and available bandwidth, and determines the best level of detail, which will be decompressed and added to the scene.
 
-Please refer to the *README.md* files contained in the corresponding folders for building and running.
+The code uses [Babylon.js](https://www.babylonjs.com) and is in the folder with the same name. Please refer to the *README.md* files contained in this folder for building and running.
 
 ## TODOS
 

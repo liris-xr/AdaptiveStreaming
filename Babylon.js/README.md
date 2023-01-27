@@ -30,14 +30,14 @@ Finally, in OBS, configure the Websocket:
 
 ## Launching the application
 
-Two methods are available to launch your application : you may launch it in development mode or in production mode / deploy it.
+Two methods are available to launch your application : you may launch it in development mode or in production mode / deploy it. In development mode, if the code is modified, the application will restart automatically in order to update itself. In production mode, the application is compiled and packaged. It is then ready to be deployed on a server.
 
-In development mode, if you modify your code, the application will restart automatically in order to update itself. In production mode, your application is compiled and packaged. It is then ready to be deployed on a server.
+* To launch the application in development mode, use ```npm run start```. A new tab will automatically open in your browser with the correct URL.
 
-To launch the application in development mode, use ```npm run start```. A new tab will automatically open in your browser with the correct URL.
+* To build the application in production mode, use ```npm run build```. This command will compile your code and the resulting package will be in the ```/dist``` folder. It must then be deployed : 
+    - To do this locally, create a blank folder, then add the ```/dist``` folder files and the ```/assets``` folder (the folder, not just its contents) in it. Now launch an http server from the folder (via, for example, the command ```python -m http.server``` for local tests) and issue a request to this server (ex: ```https:/ /localhost:8000``` with Python).
 
-To use the application in production mode, use ```npm run build```. This command will compile your code and the resulting package will be in the ```/dist``` folder. It must then be deployed. To do this locally, create a blank folder, then add the ```/dist``` folder files and the ```/assets``` folder (the folder, not just its contents) in it. Now launch an http server from the folder (via, for example, the command ```python -m http.server``` for local tests) and issue a request to this server (ex: ```https:/ /localhost:8000``` with Python).
-
+## Usage
 Once the application is launched, you will be able to move freely (except in the **animations** projects, in which the camera is scripted). In *desktop* mode, use the arrow keys to move around and the mouse to look around. In VR mode, movements are done in *roomscale* mode, that is to say that you move in a room by walking and you go from one room to another by teleporting. The objects in their most simplified version are already present in the scene. A button allows you to launch the import of the following levels. When importing, you will still be able to move freely.
 
 In the **master** project, 2 buttons are used to select the strategy and the metric to use during the import, isocahedrons allow you to teleport from one scene to another and the majority of walls and floors were added to restrict space in *desktop* mode. These restrictions have not been added in VR mode. Please note that objects do not have *colliders* and you can not interact with them. For **animations** projects, an additional button lets you choose the animation to launch.
