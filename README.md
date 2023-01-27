@@ -1,24 +1,17 @@
 # XRMuseum
 
-Ce projet a pour but de réaliser de l'import d'objets 3D (maillages) de manière dynamique et adaptative, un peu de la même façon que Youtube adapte dynamiquement la qualité d'une vidéo. De plus, nous utilisons un indice de qualité visuelle (HDRVDP2) sur les maillages afin d'améliorer la qualité de la décision des objets à importer ainsi qu'une méthode de compression (Google Draco) de maillages afin d'accélérer l'import des objets.
+This project aims to import 3D objects (meshes) in a dynamic and adaptive way, a bit like Youtube dynamically adapts the quality of a video. We use a visual quality index (HDRVDP2) on the meshes in order to improve the decision regarding the level of detail of the objects to be imported. Objects are compressed using Draco to improve loading speed.
 
-Le principe est le suivant : les objets sont déclinés en différents niveaux de détail qui sont stockés sur un serveur. Du côté du client, un script évalue les différents niveaux de détail en fonction de la position, la rotation et la bande passante de l'utilisateur, et détermine le meilleur niveau de détail, qui sera décompressé et ajouté à la scène.
+The principle is as follows: the objects are broken down into different levels of detail which are stored on a server. On the client side, a script evaluates the different levels of detail depending on the user's position / rotation and available bandwidth, and determines the best level of detail, which will be decompressed and added to the scene.
 
-Il existe différentes stratégies et métriques pour importer les niveaux de détail et nous avons testé ces stratégies et métriques en comparant des vidéos de déplacements dans le musée avec une version *offline*, où tous les objets étaient déjà importés au meilleur niveau de détail. Ces vidéos ont été enregistrées avec OBS puis comparées avec Matlab et analysées avec Python.
-
-Pour chaque partie (Babylon.js / Matlab / Python), se référer aux fichiers *README.md* contenus dans les dossiers correspondants.  
-Pour plus de détails, se référer à mon rapport de stage.
+Please refer to the *README.md* files contained in the corresponding folders for building and running.
 
 ## TODOS
 
-Tout n'a pas été réalisé sur le musée et il reste beaucoup d'améliorations et d'experiences possibles.  
-Je fais ici une liste non exhaustive de choses qui pourront être réalisées.
+There are still many possible improvements on this framework. Here is a non-exhaustive list of things that can be done:
 
- - Experience subjective : voir si les résultats obtenus avec l'expérience objective décrite ci-dessus collent avec des notes données par des humains.
- - Tests en VR : cette application a pour but d'être utilisé en VR, donc on pourrait réaliser des mesures de performance (FPS, temps de chargement, nombre de polygones) avec et sans l'algorithme adaptatif.
- - Enregistrements en VR : pour voir comment l'application rend en VR.
- - Débranchage de la compression : j'ai tenté de faire une version parallelélisée d'import d'objets 3D au format .obj, mais l'import est trop long (plus d'une minute) --> regarder le code du [OBJFileLoader](https://github.com/BabylonJS/Babylon.js/blob/master/loaders/src/OBJ/objFileLoader.ts) de Babylon et adapter en conséquence **animations_objs**
- - En fonction des résultats précédents, trouver une nouvelle stratégie et métrique optimale
- - Créer une métrique prenant en compte la distance avec la fovéa (centre du champ de vision)
- - Utiliser de l'eye-tracking avec
- - Adapter les algorithmes en fonction des capacités materielles et du type de device de l'utilisateur
+  - VR tests: this application is intended to be used in VR, so we could perform performance measurements (FPS, loading time, number of polygons) with and without the adaptive algorithm.
+  - Recordings in VR: to see how the application renders in VR.
+  - Create a metric taking into account the distance with the fovea (center of the field of vision).
+  - Using eye-tracking.
+  - Adapt the algorithms according to the material capacities and the type of device of the user

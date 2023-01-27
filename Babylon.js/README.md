@@ -1,70 +1,43 @@
-# BabylonMuseum
+## BabylonMuseum
 
-Dans ce dossier se trouvent différentes versions de l'application : 
- - **master** est la version "normale" du musée
- - **test_scene** est une version simplifiée utilisée pour réaliser les tests sur l'application
- - **animations** est la version permettant d'enregistrer les vidéos des animations
- - **animations_refs** est la version qui a permis d'enregistrer les références
- - **animation_objs** est une version qui était censée permettre d'enregistrer les animations avec LoDs mais sans compression
- - **Version_LoadAllDraco**, **Version_LoadOBJ**, **Version_LoadOBJ100%** et **Version_LoadOnlyFullDraco** sont d'anciennes versions.
+This folder contains different versions of the application:
+  - **master** is the "normal" museum version.
+  - **test_scene** is a simplified version used to perform the tests on the application.
+  - **animations** is the version that may be used for recording animation videos.
+  - **animations_refs** is the version that may be used to generate the reference frames.
+  - **Version_LoadAllDraco** and **Version_LoadOnlyFullDraco** are old versions that may contain interesting routines.
 
-Il y a aussi le fichier *old_colde.ts* qui contient du code réalisé précédemment et qui pourrait être utile par le futur.
+The *old_colde.ts* file also contains old but potentially useful code.
 
 ## Requirements
 
-Les différents packages requis pour l'exécution des différents projets sont listés dans les fichiers *package.json*. Pour installer ces packages, allez dans le dossier du projet à lancer et exécutez la commande ```npm install```.
+This project uses [babylon.js](https://www.babylonjs.com) v4. The different packages required for running different projects are listed in *package.json* files. To install these packages, go to the folder of the project to launch and run  ```npm install```.
 
-Pour les projets **animations**, **animations_obj** et **animations_refs**, OBS a aussi besoin d'être installé lancé et configuré correctement, afin d'enregistrer automatiquement les runs.  
+For **animations**, **animations_obj** and **animations_refs** projects, OBS is required. It should be correctly configured and launched in order to record automatically.
 
-Installez [OBS Studio](https://obsproject.com/fr/welcome) et [OBS WebSocket](https://github.com/Palakis/obs-websocket/blob/4.x-current/README.md).
+Install [OBS Studio](https://obsproject.com/fr/welcome) and [OBS WebSocket](https://github.com/Palakis/obs-websocket/blob/4.x-current/README.md) .
 
-Dans OBS, configurez la scène, pour n'enregistrer que votre navigateur :
- - Choisissez la source **Window Capture**
- - Dans la popup, choisissez, parmi la liste des applications ouvertes, le navigateur où est lancé l'application
- - Cochez la case afin de ne pas enregistrer la souris
- - Une fois la source configurée, allez dans les Filtres
- - Ici, ajustez les bords afin de n'enregistrer que l'application et pas la liste des onglets par exemple
+In OBS, configure the scene to only record your browser:
+  - Choose source **Window Capture**.
+  - In the popup, choose, from the list of open applications, the browser where the application is launched.
+  - Check the box in order not to register the mouse.
+  - Once the source is configured, go to Filters.
+  - Adjust the edges in order to save only the application and not the list of tabs for example.
 
-Enfin, dans OBS, configurez le Websocket : 
- - Le port sur lequel le socket écoute doit être 4444
- - Le mot de passe doit être *alpha-beta*
+Finally, in OBS, configure the Websocket:
+  - The port the socket is listening on must be 4444.
+  - Password must be *alpha-beta*.
 
-## Lancement de l'application
+## Launching the application
 
-Ici, vous avez 2 choix pour lancer votre application. Vous pouvez la lancer en mode développement ou en mode production / la déployer. 
+Two methods are available to launch your application : you may launch it in development mode or in production mode / deploy it.
 
-En mode développement, si vous modifiez votre code, l'application redémarrera automatiquement afin de se mettre à jour. En mode production, vous compilez et empaquetez votre application et elle est prête à être déployée sur un serveur.
+In development mode, if you modify your code, the application will restart automatically in order to update itself. In production mode, your application is compiled and packaged. It is then ready to be deployed on a server.
 
-Pour lancer l'application en mode développement, lancez la commande ```npm run start```. Un nouvel onglet s'ouvrira automatiquement dans votre navigateur avec la bonne URL. Vous pouvez utiliser l'application !
+To launch the application in development mode, use ```npm run start```. A new tab will automatically open in your browser with the correct URL.
 
-Pour utiliser l'application en mode production, lancez la commande ```npm run build```. Cette commande va compiler votre code et le code résultant se trouvera dans le dossier ```/dist```. Pour faire fonctionner l'application, il faut la déployer. Pour le faire en local, vous pouvez créer un dossier vierge. Ajoutez-y les fichiers du dossier ```/dist```. Ajoutez le dossier ```/assets``` (le dossier, pas uniquement son contenu). Lancez maintenant un serveur http depuis le dossier (via, par exemple, la commande ```python -m http.server``` pour des tests en local) et lancez une requête vers ce serveur (ex: ```https://localhost:8000``` avec Python).
+To use the application in production mode, use ```npm run build```. This command will compile your code and the resulting package will be in the ```/dist``` folder. It must then be deployed. To do this locally, create a blank folder, then add the ```/dist``` folder files and the ```/assets``` folder (the folder, not just its contents) in it. Now launch an http server from the folder (via, for example, the command ```python -m http.server``` for local tests) and issue a request to this server (ex: ```https:/ /localhost:8000``` with Python).
 
-Une fois l'application lancée, vous pourrez vous déplacer librement (sauf si vous avez les animations lancées). En mode *desktop*, utilisez les flèches directionnelles pour vous déplacer et la souris pour regarder autour de vous. En mode VR, les déplacements se font en mode *roomscale*, c'est-à-dire que vous vous déplacez dans une pièce en marchant et vous passez d'une pièce à l'autre en vous téléportant. Les objets dans leur version la plus simplifiée sont déjà présents dans la scène. Un bouton vous permet de lancer l'import des niveaux suivants. Lors de l'import, vous pourrez toujours vous déplacer librement.
+Once the application is launched, you will be able to move freely (except in the **animations** projects, in which the camera is scripted). In *desktop* mode, use the arrow keys to move around and the mouse to look around. In VR mode, movements are done in *roomscale* mode, that is to say that you move in a room by walking and you go from one room to another by teleporting. The objects in their most simplified version are already present in the scene. A button allows you to launch the import of the following levels. When importing, you will still be able to move freely.
 
-Dans le projet **master**, 2 boutons vous permettent de sélectionner la stratégie et la métrique à employer lors de l'import, des isocaèdres vous permettent de vous téléporter d'une scène à l'autre et la majorité des murs et sols ont été ajoutés pour restreindre l'espace en mode *desktop*. Ces restrictions n'ont pas été ajoutées en mode VR. Aussi, les objets n'ont pas de *colliders* et on ne peut pas interagir avec. Pour les projets d'**animations**, un bouton supplémentaire permet de choisir l'animation à lancer.
-
-## Description du code (fichiers les plus importants)
-
-Le code s'organise de la même façon dans tous les projets (sauf peut-être dans les versions plus anciennes). Ici, je donne une description brève de l'utilité de certains fichiers. Pour plus d'informations sur les méthodes ou les autres fichiers, vous pouvez vous référer à la doc présentes dans chacun des fichiers.
-
-### Le fichier principal : index.ts
-
-Ce fichier est le point d’entrée dans le programme. Dans ce fichier, la classe Museum se charge tout d’abord d’initialiser les variables et fonctions permettant de lancer le projet. Pour cela elle crée un objet qui fera l’interface avec WebGL et une scène, puis un environnement XR (mixed reality = réalité virtuelle et/ou augmentée) et enfin définit une boucle qui gère les entrées des contrôleurs, l’affichage de la scène et l’import des objets. La classe Museum est aussi celle qui remplit initialement la scène. Elle crée les lumières, les isocaèdres pour la téléportation entre les salles et importe la structure du musée à partir du
-fichier *.gltf*.
-
-### Les MuseumObjects : museum_object.ts
-
-Un MuseumObject représente un objet dans le musée. Il contient toutes les métadonnées de l’objet ainsi que les différents niveaux de détail importés. Les fichiers *metadata.json* contiennent, pour chaque objet, son nom, sa surface et, pour tous les niveaux de détail et la texture, sa localisation, sa taille et son indice de qualité visuelle. Le MuseumObject possède aussi une référence vers un objet DracoCompression. Cet objet décompresse les fichiers .drc de manière asynchrone en utilisant des WebWorkers.
-
-### L’ObjectManager : object_manager.ts
-
-L’ObjectManager est en quelque sorte l’orchestrateur dans le code. Il initialise les MuseumObjects et lance l’exécution des stratégies. Il est aussi chargé de récupérer des informations sur les objets (position, rotation, localisation et mise à l’échelle) du fichier *positions.json*.
-
-### Le SpeedManager : speed_manager.ts
-La classe SpeedManager calcule la bande passante et la vitesse de décompression en réalisant une moyenne des données obtenues lors des derniers imports. Toutes ses méthodes sont statiques et sont donc accessibles sans avoir à créer d’instance.
-
-### L’objet Strategies : strategies.ts
-C’est dans l’objet Strategies que sont implémentées nos stratégies. Dans ce fichier, on retrouve aussi l’énumération ChooseStrategy qui liste les différents types de stratégie. Toutes les méthodes sont statiques pour éviter de devoir instancier la classe. Cette classe offre notamment la méthode executeStrategy qui appelle la méthode privée correspondant à la stratégie qui a été choisie.
-
-### L’objet Metrics : metrics.ts
-C’est dans l’objet Metrics que sont implémentées nos métriques. Dans ce fichier, on retrouve aussi l’énumération ChooseMetric qui liste les différents types de métrique. Toutes les méthodes sont statiques pour éviter de devoir instancier la classe. Cette classe offre notamment la méthode calcUtility qui calcule l’utilité d’un objet pour un point de vue avec la métrique choisie en appelant la bonne méthode. L’utilité est la valeur renvoyée par une métrique, par exemple la distance entre l’objet et la caméra ou la surface visible à l’écran de l’objet.
+In the **master** project, 2 buttons are used to select the strategy and the metric to use during the import, isocahedrons allow you to teleport from one scene to another and the majority of walls and floors were added to restrict space in *desktop* mode. These restrictions have not been added in VR mode. Please note that objects do not have *colliders* and you can not interact with them. For **animations** projects, an additional button lets you choose the animation to launch.
