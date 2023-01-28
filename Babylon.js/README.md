@@ -11,7 +11,8 @@ The *old_colde.ts* file also contains old but potentially useful code.
 
 ## Requirements
 
-This project uses [babylon.js](https://www.babylonjs.com) v4. The different packages required for running different projects are listed in *package.json* files. To install these packages, go to the folder of the project to launch and run  ```npm install```.
+This project uses [babylon.js](https://www.babylonjs.com) v4, and therefore relies on [node.js](https://nodejs.org/en/). The best way of installing and using node.js is probably via [nvm](https://github.com/nvm-sh/nvm). This code has been done with node.js v14, but should be usable with any ulterior version. 
+The different packages required for running different projects are listed in *package.json* files. To install these packages, go to the folder of the project to launch and run  ```npm install```.
 
 For **animations**, **animations_obj** and **animations_refs** projects, OBS is required. It should be correctly configured and launched in order to record automatically.
 
