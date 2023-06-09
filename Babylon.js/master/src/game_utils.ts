@@ -16,7 +16,7 @@ export default class Utils {
         this.canvas = document.getElementById("renderCanvas") as HTMLCanvasElement;
 
         // Generate the BABYLON 3D engine
-        this.engine = new Engine(this.canvas, true); 
+        this.engine = new Engine(this.canvas, true, {disableWebGL2Support:true}); 
 
         // Creates a basic Babylon Scene object
         this.scene = new Scene(this.engine);   
